@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-## Organize PATH
+#>>>>>>>>>>>> Organize PATH
 
 prependpath() {
 	if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
@@ -18,3 +18,10 @@ prependpath() {
 
 prependpath $HOME/bin
 
+#<<<<<<<<<<<< Organize PATH
+
+#>>>>>>>>>>>> Enable z command
+
+. ${HOME}/external/z/z.sh
+
+#<<<<<<<<<<<< Enable z command
